@@ -44,6 +44,13 @@
 	}
 }
 
+@media (min-width: 700px) {
+	.tagline {
+		padding-left: 37px;
+		padding-right: 37px;
+	}
+}
+
 @media (min-width: 1140px) {
 	.promises-counter__icon {
 		text-align: left;
