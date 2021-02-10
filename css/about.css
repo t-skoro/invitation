@@ -1,0 +1,92 @@
+.about-wrapper {
+	position: relative;
+	overflow: hidden;
+	padding-top: 25px;
+	border-top: 1px solid #ff8e39;
+}
+
+.about-wrapper::after {
+	content: "";
+	position: absolute;
+	top: 100px;
+	right: -180px;
+	display: block;
+	width: 612px;
+	height: 518px;
+	background-image: url(../img/illustrations/shape-3.svg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	z-index: -1;
+}
+.about-container {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+.about-cards {
+	width: 488px;
+	padding-left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	order: 2;
+}
+
+/* .cards-1-column {
+} */
+
+/* .cards-2-column {
+	
+} */
+
+.about-content {
+	margin-bottom: 50px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #0d3e60;
+	line-height: 1.636;
+	order: 1;
+}
+
+.about-content p {
+	margin-bottom: 36px;
+}
+
+.about-toogle-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+a.about__toogle,
+.about__toogle {
+	width: 165px;
+	height: 46px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	background-color: #fff9df;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #2e435e;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-decoration: none;
+}
+
+.about__toogle:hover {
+	background-color: #ff8e39;
+	color: #ffffff;
+}
+
+.about-content__box {
+	display: none;
+}
+
+.about-content__box:first-child {
+	display: block;
+}
